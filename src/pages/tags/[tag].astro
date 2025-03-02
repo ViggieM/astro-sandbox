@@ -22,6 +22,6 @@ const {posts} = Astro.props;
   <p>Posts tagged with {tag}</p>
   <ul>
     {posts.map((post: any) =>
-      <li><a href={`/posts/${post.id}/`}>{post.data.title}</a></li>)}
+      <li><a href={`/blog/${post.id}/`}>{post.data.title}</a></li>)}
   </ul>
 </BaseLayout>
